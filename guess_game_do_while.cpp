@@ -3,9 +3,11 @@ using namespace std;
 
 main(){
     char correctChar, userGuess;
-    int tryCount;
+    int tryCount, maxTries;
     correctChar = 'p';
     tryCount = 1;
+    maxTries = 5;
+
 
     do
     {
@@ -13,11 +15,11 @@ main(){
         cin >> userGuess;
         if (userGuess == correctChar){
             cout << "Congrats! You guessed correctly in " << tryCount << " attempt(s)." << "\n";
-            tryCount = 16;
+            
         }
         else{
             tryCount += 1;
         }
-    } while (tryCount <= 5);
+    } while (tryCount <= maxTries && userGuess!='p');
     
 }

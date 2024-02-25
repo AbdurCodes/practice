@@ -2,6 +2,7 @@
 using namespace std;
 
 // arrays in functions are called by reference
+// this little program demonstrates that passing an array to a function what the function does to the array changes the array in the calling program
 
 void myFunc (int[], int);
 void myFunc (int myarray [], int arraySize){

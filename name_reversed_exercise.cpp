@@ -1,3 +1,5 @@
+// this program reverses a given name through a simple for loop with no change to the actual name
+
 #include <iostream>
 using namespace std;
 
@@ -20,5 +22,8 @@ main(){
     for (int i=nullIndex-1; i>=0; i--){
         cout << name[i];
     }
+
+    // the name remains the same in memory since we did not do any assignment operations in the above steps
+    cout << "\nThe name at program end: " << name << "\n";
 
 }
